@@ -25,6 +25,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   transition: background-color 0.5s ease, color 0.5s ease;
+  font-size: 2vw;
 }
 .show-on-load {
   animation: fadeSlideDown 1s ease-out forwards;
