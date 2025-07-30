@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   transition: background-color 0.5s ease, color 0.5s ease;
-  font-size: 2vw;
+  font-size: 2rem;
 }
 .show-on-load {
   animation: fadeSlideDown 1s ease-out forwards;
@@ -126,6 +126,7 @@ footer {
 .desc {
   text-align: center;
   padding: 0.5rem;
+  font-size: 2vw;
 }
 .column img {
   margin-top: 8px;
@@ -138,6 +139,9 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+  body {
+    font-size: 1.5rem;
+  }
   .column {
     flex: 50%;
     max-width: 50%;
@@ -145,6 +149,9 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
   .column {
     flex: 100%;
     max-width: 100%;
