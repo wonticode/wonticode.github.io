@@ -68,7 +68,8 @@ h1 {
 }
 
 .container.active {
-  max-width: 80%;
+  text-align: center;
+  max-width: 100%;
   display: block;
   margin: 1em auto;
   padding: 2em 4em;
@@ -107,7 +108,7 @@ footer {
   }
 }
 .projectsContainer {
-  display: flex;
+  display: none; /* temporarily hidden */
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
