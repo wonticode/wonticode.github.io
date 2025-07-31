@@ -114,6 +114,7 @@ footer {
 }
 
 .column {
+  margin-top: 2rem;
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
@@ -126,7 +127,7 @@ footer {
 .desc {
   text-align: center;
   padding: 0.5rem;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 .column img {
   margin-top: 8px;
