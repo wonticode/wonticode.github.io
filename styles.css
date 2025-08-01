@@ -19,6 +19,7 @@
 }
 
 body {
+  position: relative;
   font-family: "PT Sans", sans-serif;
   background-color: var(--bg);
   display: flex;
@@ -31,7 +32,7 @@ body {
   animation: fadeSlideDown 1s ease-out forwards;
 }
 h1 {
-  font-size: clamp(1.5rem, 3.5vw, 8rem);
+  font-size: clamp(1.2rem, 3.5vw, 8rem);
   color: var(--header);
 }
 [class*="fa-"] {
@@ -69,9 +70,9 @@ h1 {
 
 .container.active {
   text-align: center;
-  max-width: 100%;
+  max-width: 80%;
   display: block;
-  margin: 1em auto;
+  margin: 1em auto 5em auto;
   padding: 2em 4em;
   background-color: var(--container);
   border-radius: 1rem;
@@ -90,7 +91,16 @@ em {
   margin-bottom: 1rem;
 }
 
+body::after {
+  content: "";
+  display: block;
+  height: 50px;
+}
+
 footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
   width: 100%;
   color: var(--icons);
   text-align: center;
@@ -108,20 +118,20 @@ footer {
   }
 }
 .projectsContainer {
-  display: none; /* temporarily hidden */
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
   width: 100%;
   max-width: 52rem;
   margin: 2rem auto;
-  justify-content: space-evenly;
 }
 
 .projectContainer {
   align-items: center;
   margin-top: 2rem;
   display: flex;
+  justify-content: left;
   background-color: whitesmoke;
   padding: 1rem 2rem;
   border-radius: 1rem;
@@ -139,9 +149,7 @@ footer {
   height: 4em;
   aspect-ratio: 1/1;
   object-fit: cover;
-  vertical-align: top;
   border-radius: 0.5rem;
-  flex-shrink: 0;
 }
 .projectContainer p {
   padding: 0.5rem;
@@ -159,7 +167,7 @@ footer {
   color: white;
   cursor: pointer;
   width: 12rem;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   transition: background-color 0.3s ease;
 }
 .projectContainer button:hover {
@@ -197,6 +205,26 @@ footer {
 
 @media screen and (max-width: 600px) {
   body {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .projectContainer {
+    position: relative;
+    padding: 1rem 4rem;
+  }
+  .projectContainer button {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .projectContainer p {
+    font-size: 3vw;
+    width: 5rem;
+  }
+  .info {
+    margin-left: 0rem;
   }
 }
