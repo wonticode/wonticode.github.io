@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>En's page</title>
-    <link href="styles.css" rel="stylesheet" />
+    <title>En's Webpage</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -12,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,9 +19,10 @@
       type="image/x-icon"
       href="images/pixel art .webp"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body id="body">
-    <nav class="navigation">
+  <body id="body" class="darkmode">
+    <div class="mode-toggle">
       <i
         class="fa-solid fa-moon"
         id="dark-mode"
@@ -33,59 +33,60 @@
         id="light-mode"
         title="Switch to light mode"
       ></i>
-      <i class="fa-solid fa-circle-info" id="aboutBtn" title="About"></i>
-      <i class="fa-solid fa-folder" id="projectBtn" title="works"></i>
-      <i
-        class="fa-solid fa-envelope-circle-check"
-        id="contactBtn"
-        title="contact"
-      ></i>
-    </nav>
-    <!-- about -->
-    <div class="container active" id="about">
-      <h1>Hi, I am En!</h1>
-      <p>I like to draw, code and read a bit :D</p>
-      <p><em>I am an INFJ btw</em></p>
     </div>
-    <!-- contact  -->
-    <div class="container" id="contact">
-      <div class="contact-container">
-        <a class="contact" href="https://github.com/wonticode" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a
-          class="contact"
-          href="https://www.instagram.com/iwontcode"
-          target="_blank"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a class="contact" href="https://x.com/iwontcode" target="_blank"
-          ><i class="fa-brands fa-twitter"></i
-        ></a>
-        <a
-          class="contact"
-          href="https://discord.com/users/1296684707916021772"
-          target="_blank"
-          ><i class="fa-brands fa-discord"></i
-        ></a>
+    <div class="main-content">
+      <div class="content-section" id="about">
+        <h1>About Me</h1>
+        <p>
+          Hey, I'm En! I draw, code, and read a bit. <br /><em>INFJ btw</em>
+        </p>
       </div>
-      <p>You can contact me here:3</p>
+      <div class="content-section" id="contact">
+        <h1>Contact</h1>
+        <div class="contact-container">
+          <a href="https://github.com/wonticode" target="_blank"
+            ><i class="fa-brands fa-github"></i> GitHub</a
+          >
+          <a href="https://www.instagram.com/iwontcode" target="_blank"
+            ><i class="fa-brands fa-instagram"></i> Instagram</a
+          >
+          <a href="https://x.com/iwontcode" target="_blank"
+            ><i class="fa-brands fa-twitter"></i> X/Twitter</a
+          >
+          <a
+            href="https://discord.com/users/1296684707916021772"
+            target="_blank"
+            ><i class="fa-brands fa-discord"></i> Discord</a
+          >
+        </div>
+      </div>
+      <div class="content-section" id="project">
+        <h1>Projects</h1>
+        <div class="project-container">
+          <a
+            href="https://wonticode.github.io/Rock-paper-scissors./"
+            target="_blank"
+            ><i class="fa-solid fa-hand-rock"></i> Rock Paper Scissors</a
+          >
+          <a
+            href="https://wonticode.github.io/Random-password-generator/"
+            target="_blank"
+            ><i class="fa-solid fa-lock"></i> Password Generator</a
+          >
+          <a
+            href="https://wonticode.github.io/Dice-Roller-Program"
+            target="_blank"
+            ><i class="fa-solid fa-dice"></i> Dice Roller</a
+          >
+          <a
+            href="https://wonticode.github.io/Number-Guessing-game/"
+            target="_blank"
+            ><i class="fa-solid fa-question"></i> Number Guessing</a
+          >
+        </div>
+      </div>
     </div>
-    <!--works-->
-    <div class="container" id="project">
-      <h1 class="gallery-header">Currently in maintainance</h1>
-      <p>
-        You can check my
-        <a target="_blank" href="https://github.com/wonticode?tab=repositories"
-          >Github</a
-        >
-        if you wanna see projects.
-      </p>
-      <!--                ------------------    projects ------------------------  -->
-    </div>
-    <footer>
-      <p>&#169; 2025 En</p>
-    </footer>
+    <footer>&copy; 2025 En - A boring page.</footer>
     <script src="script.js"></script>
   </body>
 </html>
