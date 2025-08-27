@@ -48,12 +48,6 @@ body {
   padding: 1rem;
 }
 
-.mode-toggle {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-
 h1 {
   font-size: clamp(3rem, 5vw, 1.2rem) !important;
   font-weight: 600;
