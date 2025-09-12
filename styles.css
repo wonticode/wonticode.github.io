@@ -7,15 +7,15 @@
 }
 
 :root {
-  --bg: #1a1a1a;
-  --text: #e0e0e0;
-  --container: #2c2c2c;
-  --accent: #798aed;
-  --highlight: #f61fa4;
+  --bg: #e4dcc8;
+  --text: #494645;
+  --container: #fcf5e4;
+  --accent: black;
+  --highlight: #519d5c;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Cascadia Code", sans-serif;
   background-color: var(--bg);
   color: var(--text);
   height: 100dvh;
@@ -25,6 +25,7 @@ body {
   overflow: hidden;
   transition: background-color 0.5s ease, color 0.5s ease;
   font-size: clamp(1.4rem, 2vw, 1rem);
+  font-weight: 350;
 }
 
 .main-content {
@@ -55,13 +56,8 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-p {
-  line-height: 1.5;
-}
-
 em {
   color: var(--highlight);
-  font-style: normal;
 }
 
 [class*="fa-"] {
@@ -89,12 +85,13 @@ em {
   text-decoration: none;
   display: flex;
   align-items: center;
-  transition: color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .contact-container a:hover,
 .project-container a:hover {
   color: var(--highlight);
+  transform: scale(1.2);
 }
 
 footer {
